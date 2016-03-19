@@ -96,8 +96,11 @@ abstract class TestBase(val methodName:String, val classToTest:KClass<*>) {
             (LogFactory.getLog(ConstantPropagateProcFactory::class.java.name) as Log4JLogger).logger.level = Level.FATAL
 
             execute("CREATE TEMPORARY FUNCTION $methodName AS '${classToTest.qualifiedName}'")
+            setupHQL()
             setupComplete = true
         }
     }
+
+    open fun setupHQL() {}
 
 }
