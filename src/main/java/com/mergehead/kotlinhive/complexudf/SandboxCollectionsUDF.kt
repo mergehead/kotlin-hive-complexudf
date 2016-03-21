@@ -29,7 +29,7 @@ import org.apache.hadoop.hive.ql.exec.UDF
 
 @Description(
     name = "sandbox_collections",
-    value = "_FUNC_(x) - TODO",
+    value = "_FUNC_(x) - takes in a collection of TestMes and works on all of them",
     extended = """
 For example, you could do something like this:
 
