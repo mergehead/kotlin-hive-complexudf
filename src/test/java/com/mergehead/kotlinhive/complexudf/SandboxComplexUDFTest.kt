@@ -110,8 +110,8 @@ class SandboxComplexUDFTest : TestBase("sandbox_complex", SandboxComplexUDF::cla
         queryForClass("""
             SELECT sandbox_complex(
                 NAMED_STRUCT(
-                    'value', 'Hola',
-                    'otherValue', 'banana'
+                    'value', 123,
+                    'otherValue', 123
                 )
             )
         """)
@@ -122,8 +122,8 @@ class SandboxComplexUDFTest : TestBase("sandbox_complex", SandboxComplexUDF::cla
         queryForClass("""
             SELECT sandbox_complex(
                 NAMED_STRUCT(
-                    'value', 123,
-                    'otherValue', 123
+                    'value', 'Hola',
+                    'otherValue', 'banana'
                 )
             )
         """)
