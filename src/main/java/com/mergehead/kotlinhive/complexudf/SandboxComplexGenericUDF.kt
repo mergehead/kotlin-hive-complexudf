@@ -96,7 +96,7 @@ class SandboxComplexGenericUDF : GenericUDF() {
     }
 
     override fun getDisplayString(args:Array<out String>):String? {
-        return "_FUNC_(" + args[0]+ " )";
+        return "sandbox_complex_generic(" + args[0]+ " )";
     }
 
 }
